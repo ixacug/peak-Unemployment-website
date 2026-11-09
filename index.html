@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peak Unemployment | Video production in Uganda</title>
+<meta name="description" content="Peak Unemployment is a Ugandan video production crew. Documentaries, commercials, social content and events, shot and edited by the same four people.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#top" aria-label="Peak Unemployment home"><span class="logo-mark" aria-hidden="true"></span>Peak Unemployment</a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav" class="nav">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#team">Team</a>
+    <a class="btn btn-small" href="#contact">Book a shoot</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Peak Unemployment. Give us what to do. we tell stories.</h1>
+      <p class="lead">We shoot and edit videos for businesses, organisations and events across Uganda. The people who meet you are the people who film and cut your video.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Tell us about your project</a>
+        <a class="btn btn-ghost" href="#work">See our work</a>
+      </div>
+    </div>
+    <div class="viewfinder" aria-hidden="true">
+      <span class="vf-corner tl"></span><span class="vf-corner tr"></span>
+      <span class="vf-corner bl"></span><span class="vf-corner br"></span>
+      <div class="vf-rec"><span class="vf-dot"></span>REC</div>
+      <div class="vf-tc" id="timecode">00:00:00:00</div>
+      <div class="vf-meta">4K &middot; 25 fps &middot; Kampala</div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>What we make</h2>
+    <ul class="services">
+      <li>
+        <h3>Commercials and brand films</h3>
+        <p>Product videos, company profiles and ads for TV, YouTube and social.</p>
+      </li>
+      <li>
+        <h3>Documentaries</h3>
+        <p>Longer stories for NGOs, campaigns and communities, filmed on location.</p>
+      </li>
+      <li>
+        <h3>Social media content</h3>
+        <p>Reels, TikToks and short clips, planned in batches so your page never goes quiet.</p>
+      </li>
+    
+    </ul>
+  </section>
+
+  <section class="section section-dark" id="work">
+    <h2>Selected work</h2>
+    <p class="section-note">Replace these tiles with your own videos. See the note in script.js.</p>
+    <div class="work-grid" id="workGrid"></div>
+  </section>
+
+  <section class="section" id="process">
+    <h2>How a project runs</h2>
+    <ol class="steps">
+      <li><h3>Brief</h3><p>A call or coffee. You tell us the goal, the audience and the deadline.</p></li>
+      <li><h3>Plan and shoot</h3><p>We send a shot list and a quote, then film on the agreed days.</p></li>
+      <li><h3>Edit</h3><p>You get a first cut to review, plus two rounds of changes.</p></li>
+      <li><h3>Deliver</h3><p>Final files in every format you need, from cinema screen to phone.</p></li>
+    </ol>
+  </section>
+
+  <section class="section section-tint" id="team">
+    <h2>The crew</h2>
+    <div class="team">
+      <article class="member"><div class="avatar" data-initial="A"></div><h3>Name One</h3><p>Director and editor</p></article>
+      <article class="member"><div class="avatar" data-initial="B"></div><h3>Name Two</h3><p>Cinematographer</p></article>
+      <article class="member"><div class="avatar" data-initial="C"></div><h3>Name Three</h3><p>Producer</p></article>
+      <article class="member"><div class="avatar" data-initial="D"></div><h3>Name Four</h3><p>Motion graphics and sound</p></article>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="contact-copy">
+      <h2>Let's plan your video</h2>
+      <p>Send us a few details and we'll reply within one working day. The form opens WhatsApp with your message ready to send.</p>
+      <p class="contact-lines">
+        <span>WhatsApp: <a href="https://wa.me/256765558482">+256 76 555 8482</a></span>
+        <span>Email: <a href="mailto:hello@peakunemployment.example">hello@peakunemployment.example</a></span>
+        <span>Kampala, Uganda</span>
+      </p>
+    </div>
+    <form id="contactForm" class="form" novalidate>
+      <label>Your name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>Phone or email
+        <input type="text" name="contact" autocomplete="email" required>
+      </label>
+      <label>Type of video
+        <select name="type">
+          <option>Commercial or brand film</option>
+          <option>Documentary</option>
+          <option>Social media content</option>
+          <option>Event or wedding</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>About the project
+        <textarea name="message" rows="4" placeholder="What is it for, and when do you need it?" required></textarea>
+      </label>
+      <p class="form-error" id="formError" role="alert"></p>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year">2026</span> Peak Unemployment. Kampala, Uganda.</p>
+  <p><a href="#top">Back to top</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
